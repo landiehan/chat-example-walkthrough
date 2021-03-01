@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chatroom</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>欢迎😒</h1>
+      <p>选个名字呗🤔</p>
+      <form class="login" action="">
+        <label>
+          <input type="text" placeholder="在这里写名字🙄" />
+        </label>
+        <button>🤡选好了</button>
+      </form>
+    </div>
+    <h1>聊天室</h1>
+
+    <section>
+      <h2>在线用户：</h2>
+      <ul class="usersOnline"></ul>
+    </section>
+
+    <ul class="messages"></ul>
+
+    <form class="message-form" action="">
+      <label>
+        <input class="message-input" type="text" />
+      </label>
+
+      <button>发送</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
